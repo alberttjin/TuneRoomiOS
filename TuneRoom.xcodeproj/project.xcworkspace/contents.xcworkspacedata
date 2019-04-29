@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../Downloads/ios-sdk-1.0.2 4/SpotifyiOS.framework">
+   </FileRef>
+   <FileRef
       location = "self:TuneRoom.xcodeproj">
    </FileRef>
 </Workspace>

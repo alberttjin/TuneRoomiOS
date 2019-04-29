@@ -13,6 +13,7 @@
 		5F2C007A227679D400C79B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C0079227679D400C79B91 /* Assets.xcassets */; };
 		5F2C007D227679D400C79B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C007B227679D400C79B91 /* LaunchScreen.storyboard */; };
 		5F2C0088227679D400C79B91 /* TuneRoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C0087227679D400C79B91 /* TuneRoomTests.swift */; };
+		5F8591C8227690F500334B12 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8591C7227690F500334B12 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		5F2C0083227679D400C79B91 /* TuneRoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneRoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2C0087227679D400C79B91 /* TuneRoomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneRoomTests.swift; sourceTree = "<group>"; };
 		5F2C0089227679D400C79B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2C00962276831E00C79B91 /* TuneRoom-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuneRoom-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F8591C7227690F500334B12 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8591C8227690F500334B12 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +63,11 @@
 		5F2C0066227679D300C79B91 = {
 			isa = PBXGroup;
 			children = (
+				5F2C00962276831E00C79B91 /* TuneRoom-Bridging-Header.h */,
 				5F2C0071227679D300C79B91 /* TuneRoom */,
 				5F2C0086227679D400C79B91 /* TuneRoomTests */,
 				5F2C0070227679D300C79B91 /* Products */,
+				5F8591C7227690F500334B12 /* SpotifyiOS.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -360,13 +366,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3Q5A886H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TuneRoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developers.TuneRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuneRoom-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,13 +390,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3Q5A886H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TuneRoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developers.TuneRoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuneRoom-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
